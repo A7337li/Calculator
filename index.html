@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>calculator</title>
+</head>
+
+<body>
+    <div id="box">
+        <div id="box-c">
+            <p id="input-number"></p>
+        </div>
+        <div id="buttons">
+            <input type="button" value="(" class="dark" id="Open-parenthesis" onclick="myfunction('(')">
+            <input type="button" value=")" class="dark" id="close-parenthesis" onclick="myfunction(')')">
+            <input type="button" value="%" class="dark" id="Percent">
+            <input type="button" value="C" class="dark" id="clear">
+            <input type="button" value="7" class="light" id="7">
+            <input type="button" value="8" class="light" id="8">
+            <input type="button" value="9" class="light" id="9">
+            <input type="button" value="&divide;" class="dark" id="Division">
+            <input type="button" value="4" class="light" id="4">
+            <input type="button" value="5" class="light" id="5">
+            <input type="button" value="6" class="light" id="6">
+            <input type="button" value="&times;" class="dark" id="multiplication">
+            <input type="button" value="1" class="light" id="1">
+            <input type="button" value="2" class="light" id="2">
+            <input type="button" value="3" class="light" id="3">
+            <input type="button" value="-" class="dark" id="subtraction">
+            <input type="button" value="0" class="light" id="0" onclick="myfunction(0)">
+            <input type="button" value="." class="light" id="point">
+            <input type="button" value="=" class="blue" id="equal">
+            <input type="button" value="+" class="dark" id="sum">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

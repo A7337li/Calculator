@@ -11,30 +11,28 @@
 
 <body>
     <div id="box">
-        <div id="box-c">
-            <p id="input-number"></p>
-        </div>
+        <input type="text" value="" id="inp">
         <div id="buttons">
             <input type="button" value="(" class="dark" id="Open-parenthesis" onclick="myfunction('(')">
             <input type="button" value=")" class="dark" id="close-parenthesis" onclick="myfunction(')')">
-            <input type="button" value="%" class="dark" id="Percent">
-            <input type="button" value="C" class="dark" id="clear">
-            <input type="button" value="7" class="light" id="7">
-            <input type="button" value="8" class="light" id="8">
-            <input type="button" value="9" class="light" id="9">
-            <input type="button" value="&divide;" class="dark" id="Division">
-            <input type="button" value="4" class="light" id="4">
-            <input type="button" value="5" class="light" id="5">
-            <input type="button" value="6" class="light" id="6">
-            <input type="button" value="&times;" class="dark" id="multiplication">
-            <input type="button" value="1" class="light" id="1">
-            <input type="button" value="2" class="light" id="2">
-            <input type="button" value="3" class="light" id="3">
-            <input type="button" value="-" class="dark" id="subtraction">
-            <input type="button" value="0" class="light" id="0" onclick="myfunction(0)">
-            <input type="button" value="." class="light" id="point">
+            <input type="button" value="%" class="dark" id="Percent" onclick="myfunction('%')">
+            <input type="button" value="C" class="dark" id="clear" onclick="me('')">
+            <input type="button" value="7" class="light" id="7" onclick="myfunction('7')">
+            <input type="button" value="8" class="light" id="8" onclick="myfunction('8')">
+            <input type="button" value="9" class="light" id="9" onclick="myfunction('9')">
+            <input type="button" value="&divide;" class="dark" id="Division" onclick="myfunction('&divide;')">
+            <input type="button" value="4" class="light" id="4" onclick="myfunction('4')">
+            <input type="button" value="5" class="light" id="5" onclick="myfunction('5')">
+            <input type="button" value="6" class="light" id="6" onclick="myfunction('6')">
+            <input type="button" value="&times;" class="dark" id="multiplication" onclick="myfunction('&times;')">
+            <input type="button" value="1" class="light" id="1" onclick="myfunction('1')">
+            <input type="button" value="2" class="light" id="2" onclick="myfunction('2')">
+            <input type="button" value="3" class="light" id="3" onclick="myfunction('3')">
+            <input type="button" value="-" class="dark" id="subtraction" onclick="myfunction('-')">
+            <input type="button" value="0" class="light" id="0" onclick="myfunction('0')">
+            <input type="button" value="." class="light" id="point" onclick="myfunction('.')">
             <input type="button" value="=" class="blue" id="equal">
-            <input type="button" value="+" class="dark" id="sum">
+            <input type="button" value="+" class="dark" id="sum" onclick="myfunction('+')">
         </div>
     </div>
     <script src="script.js"></script>

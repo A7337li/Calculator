@@ -1,5 +1,10 @@
-const box = document.getElementById('input-number');
+const box = document.getElementById('inp');
 
 function myfunction(x) {
-    box.innerHTML = x;
+    box.value += x;
 }
+
+function me(y) {
+    box.value = y;
+}
+

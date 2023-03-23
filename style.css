@@ -11,17 +11,6 @@
     border: 2px solid black;
 }
 
-#box-c {
-    margin: 10px auto;
-    height: 50px;
-    width: 470px;
-    border: 2px solid black;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    font-size: 35px;
-}
-
 input {
     width: 114.5px;
     height: 60px;
@@ -47,4 +36,15 @@ input {
 
 .light {
     background-color: rgb(226, 226, 226);
+}
+
+#inp {
+    margin: 10px auto;
+    height: 50px;
+    width: 470px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 35px;
 }

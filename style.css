@@ -44,7 +44,6 @@ input {
     width: 470px;
     border: 2px solid black;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
     font-size: 35px;
     cursor:default;

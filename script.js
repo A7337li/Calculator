@@ -4,7 +4,7 @@ function myfunction(x) {
     box.value += x;
 }
 
-function me(y) {
+function clean(y) {
     box.value = y;
 }
 

@@ -9,7 +9,19 @@ const clean = (y) => {
     numb.splice(0);
 }
 
-const total = () => {
+function total(z) {
     numb.push(box.value);
-    alert(numb);
+    box.value = z;
+
+    let nima = numb.map(function(str){
+        return parseInt(str);
+    });
+
+    let result = nima.reduce((a,b) => {
+        return a + b;
+    },0);    
+}
+
+function equ() {
+    // alert(total(""));
 }

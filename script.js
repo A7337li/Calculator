@@ -2,7 +2,7 @@ const $ = document;
 const box = $.getElementById('inp');
 let numb = [];
 
-const myfunction = (x) => box.value += x;
+const Entrance = (x) => box.value += x;
 
 const clean = (y) => {
     box.value = y;
@@ -19,7 +19,9 @@ function total(z) {
 
     let result = nima.reduce((a,b) => {
         return a + b;
-    },0);    
+    },0); 
+    
+    console.log(result);
 }
 
 function equ() {

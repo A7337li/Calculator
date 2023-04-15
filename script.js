@@ -2,16 +2,16 @@ const $ = document;
 const box = $.getElementById('inp');
 let numb = [];
 
-function myfunction(x) {
+const myfunction = (x) => {
     box.value += x;
 }
 
-function clean(y) {
+const clean = (y) => {
     box.value = y;
     numb.splice(0);
 }
 
-function total() {
+const total = () => {
     numb.push(box.value);
     alert(numb);
 }

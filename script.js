@@ -2,9 +2,7 @@ const $ = document;
 const box = $.getElementById('inp');
 let numb = [];
 
-const myfunction = (x) => {
-    box.value += x;
-}
+const myfunction = (x) => box.value += x;
 
 const clean = (y) => {
     box.value = y;
@@ -15,4 +13,3 @@ const total = () => {
     numb.push(box.value);
     alert(numb);
 }
-

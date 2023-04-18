@@ -24,6 +24,6 @@ function Sum(z) {
     return(result);
 }
 
-function equ() {
+function equal() {
     box.value = Sum();
 }

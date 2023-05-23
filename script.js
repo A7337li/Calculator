@@ -9,21 +9,6 @@ const clean = (y) => {
     numb.splice(0);
 }
 
-function Sum(z) {
-    numb.push(box.value);
-    box.value = z;
-
-    let nima = numb.map(function(str){
-        return parseFloat(str);
-    });
-
-    let result = nima.reduce((a,b) => {
-        return a + b;
-    },0); 
-    
-    return(result);
-}
-
-function equal() {
-    box.value = Sum();
+function total() {
+    box.value = eval(box.value);
 }

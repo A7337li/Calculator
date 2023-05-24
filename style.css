@@ -6,14 +6,14 @@
 
 #box {
     margin: 80px auto;
-    height: 600px;
+    height: 450px;
     width: 500px;
     border: 2px solid black;
 }
 
 input {
     width: 114.5px;
-    height: 60px;
+    height: 44px;
     margin: 2px;
     border: 0 solid black;
     font-size: 18px;
@@ -30,9 +30,14 @@ input {
     background-color: #9d6c3c;
 }
 
+.delete {
+    font-size: 25px;
+    font-weight: 600;
+    background-color: rgb(255, 40, 40);
+}
+
 .c {
-    background-color: red;
-    width: 233px;
+    background-color: rgb(255, 0, 0);
 }
 
 .blue {
@@ -45,7 +50,7 @@ input {
 
 #inp {
     margin: 10px auto;
-    height: 50px;
+    height: 40px;
     width: 470px;
     border: 2px solid black;
     border-bottom: 0;
@@ -58,9 +63,10 @@ input {
 
 #inp2 {
     margin: 10px auto;
-    height: 50px;
+    height: 40px;
     width: 470px;
     border: 2px solid black;
+    color: rgb(100, 100, 100);
     border-top: 0;
     margin-top: 0;
     display: flex;

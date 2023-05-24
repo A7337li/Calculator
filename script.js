@@ -3,6 +3,21 @@ const box = $.getElementById('inp');
 const box2 = $.getElementById('inp2');
 let po, per, eva = false;
 
+function mathfa(ma) {
+    if (ma == "Percent") {
+        per = true;
+        box.value += "%*";
+    } else if (ma == 'pow') {
+        po = true;
+        box.value += "^";
+    } else if (ma == 'sqrt' || ma == 'abs' || ma == 'round' || ma == 'ceil' || ma == 'floor') {
+        box2.value = Math[ma](box.value);
+    } else {
+        eva = true;
+        box.value += ma;
+    }
+}
+
 function Entrance(x) {
     box.value += x;
 
@@ -33,19 +48,4 @@ function total() {
     box.value = box2.value;
     box2.value = "";
     po, per, eva = false;
-}
-
-function mathfa(ma) {
-    if (ma == "Percent") {
-        per = true;
-        box.value += "%*";
-    } else if (ma == 'pow') {
-        po = true;
-        box.value += "^";
-    } else if (ma == 'sqrt' || ma == 'abs' || ma == 'round' || ma == 'ceil' || ma == 'floor') {
-        box2.value = Math[ma](box.value);
-    } else {
-        eva = true;
-        box.value += ma;
-    }
 }

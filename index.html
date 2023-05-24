@@ -12,11 +12,19 @@
 <body>
     <div id="box">
         <input type="text" value="" id="inp">
+        <input type="text" value="" id="inp2">
         <div id="buttons">
             <input type="button" value="(" class="dark" onclick="Entrance('(')">
             <input type="button" value=")" class="dark" onclick="Entrance(')')">
-            <input type="button" value="%" class="dark" onclick="Entrance('%')">
-            <input type="button" value="C" class="dark" onclick="clean('')">
+            <input type="button" value="C" class="dark , c" onclick="clean('')">
+            <input type="button" value="%" class="dark" onclick="mathfa('Percent')">
+            <input type="button" value="&radic;" class="dark" onclick="mathfa('sqrt')">
+            <input type="button" value="|x|" class="dark" onclick="mathfa('abs')">
+            <input type="button" value="^" class="dark" onclick="mathfa('pow')">
+            <input type="button" value="round" class="dark" onclick="mathfa('round')">
+            <input type="button" value="ceil" class="dark" onclick="mathfa('ceil')">
+            <input type="button" value="floor" class="dark" onclick="mathfa('floor')">
+            <input type="button" value="remainder" class="dark" onclick="Entrance('%')">
             <input type="button" value="7" class="light" onclick="Entrance(7)">
             <input type="button" value="8" class="light" onclick="Entrance(8)">
             <input type="button" value="9" class="light" onclick="Entrance(9)">

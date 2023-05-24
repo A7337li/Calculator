@@ -6,7 +6,7 @@
 
 #box {
     margin: 80px auto;
-    height: 400px;
+    height: 600px;
     width: 500px;
     border: 2px solid black;
 }
@@ -27,7 +27,12 @@ input {
 }
 
 .dark {
-    background-color: rgb(151, 151, 151);
+    background-color: #9d6c3c;
+}
+
+.c {
+    background-color: red;
+    width: 233px;
 }
 
 .blue {
@@ -43,6 +48,21 @@ input {
     height: 50px;
     width: 470px;
     border: 2px solid black;
+    border-bottom: 0;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    cursor:default;
+}
+
+#inp2 {
+    margin: 10px auto;
+    height: 50px;
+    width: 470px;
+    border: 2px solid black;
+    border-top: 0;
+    margin-top: 0;
     display: flex;
     align-items: center;
     font-size: 35px;

@@ -36,7 +36,9 @@ function Entrance(x) {
 function clean() {
     box.value = "";
     box2.value = "";
-    po, per, eva = false;
+    po = false;
+    per = false;
+    eva = false;
 }
 
 function cleanle() {
@@ -47,5 +49,7 @@ function cleanle() {
 function total() {
     box.value = box2.value;
     box2.value = "";
-    po, per, eva = false;
+    po = false;
+    per = false;
+    eva = false;
 }

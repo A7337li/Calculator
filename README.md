@@ -1,2 +1,2 @@
 # Calculator
-This is a engineeringgit calculator make for HTML & CSS & JavaScript
+This is a engineering calculator make for HTML & CSS & JavaScript

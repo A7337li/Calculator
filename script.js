@@ -1,9 +1,7 @@
 const $ = document;
 const box = $.getElementById('inp');
 const box2 = $.getElementById('inp2');
-let po = false;
-let per = false;
-let eva = false;
+let po, per, eva = false;
 
 function Entrance(x) {
     box.value += x;
@@ -23,9 +21,7 @@ function Entrance(x) {
 function clean() {
     box.value = "";
     box2.value = "";
-    per = false;
-    po = false;
-    eva = false;
+    po, per, eva = false;
 }
 
 function cleanle() {
@@ -36,9 +32,7 @@ function cleanle() {
 function total() {
     box.value = box2.value;
     box2.value = "";
-    per = false;
-    po = false;
-    eva = false;
+    po, per, eva = false;
 }
 
 function mathfa(ma) {

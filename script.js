@@ -53,3 +53,48 @@ function total() {
     per = false;
     eva = false;
 }
+
+function kyPhysical() {
+    document.addEventListener('keydown', function (event) {
+        switch (event.key) {
+            case 'Backspace':
+                let len = box.value.length;
+                box.value = box.value.substr(0, len - 1);
+                break;
+
+            case '0':
+            case '.':
+            case '1':
+            case '2':
+            case '3':
+            case '4':
+            case '5':
+            case '6':
+            case '7':
+            case '8':
+            case '9':
+            case '+':
+            case '-':
+            case '*':
+            case '/':
+                box.value += event.key;
+                box2.value = eval(box.value);
+                break;
+
+            case '=':
+                box.value = box2.value;
+                box2.value = "";
+                po = false;
+                per = false;
+                eva = false;
+                break;
+
+            default:
+                box.value += '';
+                break;
+        }
+
+    })
+}
+
+kyPhysical();

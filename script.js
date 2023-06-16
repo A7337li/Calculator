@@ -33,14 +33,6 @@ function Entrance(x) {
 
 }
 
-function clean() {
-    box.value = "";
-    box2.value = "";
-    po = false;
-    per = false;
-    eva = false;
-}
-
 function cleanle() {
     let len = box.value.length;
     box.value = box.value.substr(0, len - 1);

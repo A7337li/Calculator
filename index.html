@@ -11,12 +11,12 @@
 
 <body>
     <div id="box">
-        <input type="text" value="" id="inp">
-        <input type="text" value="" id="inp2">
-        <div id="buttons">
+        <input type="text" value="" id="inp" readonly>
+        <input type="text" value="" id="inp2" readonly>
+        <form id="buttons">
             <input type="button" value="(" class="dark" onclick="Entrance('(')">
             <input type="button" value=")" class="dark" onclick="Entrance(')')">
-            <input type="button" value="&#9003;" class="dark , delete" onclick="cleanle()">
+            <input type="reset" value="&#9003;" class="dark , delete">
             <input type="button" value="C" class="dark , c" onclick="clean()">
             <input type="button" value="%" class="dark" onclick="mathfa('Percent')">
             <input type="button" value="&radic;" class="dark" onclick="mathfa('sqrt')">
@@ -42,7 +42,7 @@
             <input type="button" value="." class="light" onclick="Entrance('.')">
             <input type="button" value="=" class="blue" onclick="total('')">
             <input type="button" value="+" class="dark" onclick="mathfa('+')">
-        </div>
+        </form>
     </div>
     <script src="script.js"></script>
 </body>

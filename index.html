@@ -11,38 +11,39 @@
 
 <body>
     <div id="box">
-        <form id="buttons">
+        <form>
             <input type="text" value="" id="inp" readonly>
             <input type="text" value="" id="inp2" readonly>
-
-            <input type="button" value="(" class="dark" onclick="Entrance('(')">
-            <input type="button" value=")" class="dark" onclick="Entrance(')')">
-            <input type="button" value="&#9003;" class="dark , delete" onclick="cleanle()">
-            <input type="reset" value="C" class="dark , c" onclick="clean()">
-            <input type="button" value="%" class="dark" onclick="mathfa('Percent')">
-            <input type="button" value="&radic;" class="dark" onclick="SingleOperation('sqrt')">
-            <input type="button" value="|x|" class="dark" onclick="SingleOperation('abs')">
-            <input type="button" value="^" class="dark" onclick="mathfa('pow')">
-            <input type="button" value="round" class="dark" onclick="SingleOperation('round')">
-            <input type="button" value="ceil" class="dark" onclick="SingleOperation('ceil')">
-            <input type="button" value="floor" class="dark" onclick="SingleOperation('floor')">
-            <input type="button" value="" class="dark">
-            <input type="button" value="7" class="light" onclick="Entrance(7)">
-            <input type="button" value="8" class="light" onclick="Entrance(8)">
-            <input type="button" value="9" class="light" onclick="Entrance(9)">
-            <input type="button" value="&divide;" class="dark" onclick="mathfa('/')">
-            <input type="button" value="4" class="light" onclick="Entrance(4)">
-            <input type="button" value="5" class="light" onclick="Entrance(5)">
-            <input type="button" value="6" class="light" onclick="Entrance(6)">
-            <input type="button" value="&times;" class="dark" onclick="mathfa('*')">
-            <input type="button" value="1" class="light" onclick="Entrance(1)">
-            <input type="button" value="2" class="light" onclick="Entrance(2)">
-            <input type="button" value="3" class="light" onclick="Entrance(3)">
-            <input type="button" value="-" class="dark" onclick="mathfa('-')">
-            <input type="button" value="0" class="light" onclick="Entrance(0)">
-            <input type="button" value="." class="light" onclick="Entrance('.')">
-            <input type="button" value="=" class="blue" onclick="total('')">
-            <input type="button" value="+" class="dark" onclick="mathfa('+')">
+            <div id="buttons">
+                <input type="button" value="(" class="dark" onclick="Entrance('(')">
+                <input type="button" value=")" class="dark" onclick="Entrance(')')">
+                <input type="button" value="&#9003;" class="dark , delete" onclick="cleanle()">
+                <input type="reset" value="C" class="dark , c" onclick="clean()">
+                <input type="button" value="%" class="dark" onclick="mathfa('Percent')">
+                <input type="button" value="&radic;" class="dark" onclick="SingleOperation('sqrt')">
+                <input type="button" value="|x|" class="dark" onclick="SingleOperation('abs')">
+                <input type="button" value="^" class="dark" onclick="mathfa('pow')">
+                <input type="button" value="round" class="dark" onclick="SingleOperation('round')">
+                <input type="button" value="ceil" class="dark" onclick="SingleOperation('ceil')">
+                <input type="button" value="floor" class="dark" onclick="SingleOperation('floor')">
+                <input type="button" value="" class="dark">
+                <input type="button" value="7" class="light" onclick="Entrance(7)">
+                <input type="button" value="8" class="light" onclick="Entrance(8)">
+                <input type="button" value="9" class="light" onclick="Entrance(9)">
+                <input type="button" value="&divide;" class="dark" onclick="mathfa('/')">
+                <input type="button" value="4" class="light" onclick="Entrance(4)">
+                <input type="button" value="5" class="light" onclick="Entrance(5)">
+                <input type="button" value="6" class="light" onclick="Entrance(6)">
+                <input type="button" value="&times;" class="dark" onclick="mathfa('*')">
+                <input type="button" value="1" class="light" onclick="Entrance(1)">
+                <input type="button" value="2" class="light" onclick="Entrance(2)">
+                <input type="button" value="3" class="light" onclick="Entrance(3)">
+                <input type="button" value="-" class="dark" onclick="mathfa('-')">
+                <input type="button" value="0" class="light" onclick="Entrance(0)">
+                <input type="button" value="." class="light" onclick="Entrance('.')">
+                <input type="button" value="=" class="blue" onclick="total('')">
+                <input type="button" value="+" class="dark" onclick="mathfa('+')">
+            </div>
         </form>
     </div>
     <script src="script.js"></script>

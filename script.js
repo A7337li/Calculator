@@ -7,14 +7,37 @@ let po, per, eva = false;
 
 function mathfa(ma) {
     if (ma == "Percent") {
+        po = false;
+        eva = false;
         per = true;
-        box.value += "%*";
+        if (box.value.indexOf("^") == -1
+            && box.value.indexOf("+") == -1
+            && box.value.indexOf("-") == -1
+            && box.value.indexOf("*") == -1
+            && box.value.indexOf("/") == -1
+            && box.value.indexOf("%") == -1) {
+            box.value += "%*";
+        } else {
+            box.value = box2.value + "%*";
+        }
+
     } else if (ma == 'pow') {
+        per = false;
+        eva = false;
         po = true;
-        box.value += "^";
-    } else if (ma == 'sqrt' || ma == 'abs' || ma == 'round' || ma == 'ceil' || ma == 'floor') {
-        box2.value = Math[ma](box.value);
+        if (box.value.indexOf("^") == -1
+            && box.value.indexOf("+") == -1
+            && box.value.indexOf("-") == -1
+            && box.value.indexOf("*") == -1
+            && box.value.indexOf("/") == -1
+            && box.value.indexOf("%") == -1) {
+            box.value += "^";
+        } else {
+            box.value = box2.value + "^";
+        }
     } else {
+        po = false;
+        per = false;
         eva = true;
         box.value += ma;
     }
@@ -33,6 +56,19 @@ function Entrance(x) {
         box2.value = eval(box.value);
     }
 
+}
+
+function SingleOperation(oper) {
+    if (box.value.indexOf("^") == -1
+        && box.value.indexOf("+") == -1
+        && box.value.indexOf("-") == -1
+        && box.value.indexOf("*") == -1
+        && box.value.indexOf("/") == -1
+        && box.value.indexOf("%") == -1) {
+        box2.value = Math[oper](box.value);
+    } else {
+        box2.value = Math[oper](box2.value);
+    }
 }
 
 function clean() {
@@ -83,7 +119,13 @@ function kyPhysical() {
             case '8':
             case '9':
                 box.value += event.key;
-                if (eva) {
+                if (per) {
+                    let pe = box.value.split("%*");
+                    box2.value = pe[0] / 100 * pe[1];
+                } else if (po) {
+                    let sp = box.value.split("^");
+                    box2.value = Math.pow(sp[0], sp[1]);
+                } else if (eva) {
                     box2.value = eval(box.value);
                 }
                 break;
@@ -97,11 +139,7 @@ function kyPhysical() {
                 break;
 
             case '=':
-                box.value = box2.value;
-                box2.value = "";
-                po = false;
-                per = false;
-                eva = false;
+                total()
                 break;
 
             default:

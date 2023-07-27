@@ -1,3 +1,5 @@
+'use strict'
+
 const $ = document;
 const box = $.getElementById('inp');
 const box2 = $.getElementById('inp2');
@@ -33,6 +35,12 @@ function Entrance(x) {
 
 }
 
+function clean() {
+    po = false;
+    per = false;
+    eva = false;
+}
+
 function cleanle() {
     let len = box.value.length;
     box.value = box.value.substr(0, len - 1);
@@ -60,8 +68,7 @@ function kyPhysical() {
     document.addEventListener('keydown', function (event) {
         switch (event.key) {
             case 'Backspace':
-                let len = box.value.length;
-                box.value = box.value.substr(0, len - 1);
+                cleanle();
                 break;
 
             case '0':
@@ -75,12 +82,18 @@ function kyPhysical() {
             case '7':
             case '8':
             case '9':
+                box.value += event.key;
+                if (eva) {
+                    box2.value = eval(box.value);
+                }
+                break;
+
             case '+':
             case '-':
             case '*':
             case '/':
+                eva = true;
                 box.value += event.key;
-                box2.value = eval(box.value);
                 break;
 
             case '=':

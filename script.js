@@ -3,6 +3,11 @@
 const $ = document;
 const box = $.getElementById('inp');
 const box2 = $.getElementById('inp2');
+const inputs = $.querySelectorAll('.inputs');
+const cleanVar = $.querySelector('.c');
+const cleanleVar = $.querySelector('.delete');
+const totalVar = $.querySelector('.blue');
+
 let po, per, eva = false;
 
 function mathfa(ma) {
@@ -43,20 +48,21 @@ function mathfa(ma) {
     }
 }
 
-function Entrance(x) {
-    box.value += x;
+inputs.forEach(elem => {
+    elem.addEventListener('click', (event) => {
+        box.value += event.target.value;
 
-    if (per) {
-        let pe = box.value.split("%*");
-        box2.value = pe[0] / 100 * pe[1];
-    } else if (po) {
-        let sp = box.value.split("^");
-        box2.value = Math.pow(sp[0], sp[1]);
-    } else if (eva) {
-        box2.value = eval(box.value);
-    }
-
-}
+        if (per) {
+            let pe = box.value.split("%*");
+            box2.value = pe[0] / 100 * pe[1];
+        } else if (po) {
+            let sp = box.value.split("^");
+            box2.value = Math.pow(sp[0], sp[1]);
+        } else if (eva) {
+            box2.value = eval(box.value);
+        }
+    })
+})
 
 function SingleOperation(oper) {
     if (box.value.indexOf("^") == -1
@@ -99,6 +105,10 @@ function total() {
     per = false;
     eva = false;
 }
+
+cleanVar.addEventListener('click', clean);
+cleanleVar.addEventListener('click', cleanle);
+totalVar.addEventListener('click', total);
 
 function kyPhysical() {
     document.addEventListener('keydown', function (event) {

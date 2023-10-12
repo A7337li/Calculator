@@ -77,11 +77,11 @@ function SingleOperation(oper) {
     }
 }
 
-function clean() {
+cleanVar.addEventListener('click', () => {
     po = false;
     per = false;
     eva = false;
-}
+});
 
 function cleanle() {
     let len = box.value.length;
@@ -106,7 +106,6 @@ function total() {
     eva = false;
 }
 
-cleanVar.addEventListener('click', clean);
 cleanleVar.addEventListener('click', cleanle);
 totalVar.addEventListener('click', total);
 

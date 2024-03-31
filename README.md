@@ -1,5 +1,5 @@
 # Calculator
-Click <a href="https://a7337li.github.io/Calculator/"> here </a>for live streaming <br />
+Click <a href="https://a7337li.github.io/Calculator/" target="_blank"> here </a>for live streaming <br />
 <br />
  <br />
 It's an engineering calculator with HTML, CSS, and JavaScript;
